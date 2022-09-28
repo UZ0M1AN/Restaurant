@@ -1,6 +1,7 @@
 /* FONT FAMILY */
 @import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
 /* GENERAL */
 * {
@@ -10,8 +11,9 @@
 }
 
 :root {
-    --body-bg: hsl(32, 100%, 74%, .6);
-    --cnt-bg: hsl(31, 100%, 65%);
+    --prim-color: hsl(31, 100%, 65%);
+    --sec-color: hsl(1, 100%, 65%);
+    --tert-color: hsl(31, 30%, 30%);
 }
 
 html {
@@ -19,40 +21,57 @@ html {
 }
 
 body {
-    background-color: var(--body-bg);
-    background-image: linear-gradient(var(--body-bg), var(--body-bg)), url('./foods.jpg');
+    background-image: 
+    linear-gradient(hsl(32, 100%, 74%, .6), hsl(32, 100%, 74%, .6)),
+     url('./foods.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
     min-height: 100vh;
+    font-family: 'Kalam', cursive;
     font-size: 2rem;
-    /* color: #ddd; */
+    color: #333;
 }
 
 .content {
     width: 80%;
-    margin: 3rem auto;
+    margin: 3rem auto 1rem;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 /* COMBINATIONS */
 
 h1,
-h2 {
+h2,
+.eatties--footer-logo {
     font-family: 'Merienda One', cursive;
 }
 
-/* RESTAURANT NAME */
-.name {
+header p,
+nav ul {
+    font-family: 'Caveat', cursive;
+}
+
+nav ul li:link,
+.developer {
+    transition: all .2s;
+}
+
+/* RESTAURANT HEADER */
+header {
     text-align: center;
     margin-bottom: 2rem;
-    border: 3rem inset var(--cnt-bg);
+    border: 3rem inset var(--prim-color);
     border-radius: 7rem 2rem;
     
     position: relative;
 }
 
-.name video {
+header video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -72,17 +91,127 @@ h1 {
     font-size: 7rem;
 }
 
-.name p {
-    font-family: 'Caveat', cursive;
+header p {
     font-size: 2.5rem;
 }
 
 /* RESTAURANT CNT */
-.cnt {
-    background-color: var(--cnt-bg);
+.cnt div{
+    display: none;
+}
+
+/* CNT >>> NAV BAR */
+nav ul{
+    list-style-type: none;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    padding: 0 .5rem;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.nav-link:link,
+.nav-link:visited {
+    color: var(--sec-color);
+    font-weight: 600;
 }
 
 
-h2 {
-    font-size: 5rem;
+/* CNT >>> CONTENT */
+.home {
+    background-color: var(--prim-color);
+    padding: 1rem 2rem 1.5rem;
+    width: 60%;
+    margin: 0 auto 8rem;
+}
+
+article {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+
+    position: relative;
+}
+
+article:not(:last-child)::after {
+    content: '';
+    height: 1px;
+    width: 70%;
+    background-color: var(--sec-color);
+
+    position: absolute;
+    bottom: 0;
+}
+
+
+article h2 {
+    font-size: 4rem;
+    color: var(--tert-color);
+}
+
+/* RESTAURANT FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 16rem;
+    width: 100%;
+    padding: 0 10%;
+    background-color: hsla(1, 100%, 65%, .15);
+    color: var(--tert-color);
+}
+
+.eatties--footer-logo {
+    font-size: 3.5rem;
+    background-image: linear-gradient(
+        to bottom, 
+    var(--prim-color), 
+    var(--sec-color) 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.developer {
+    color: #ddd;
+    display: inline-block;
+}
+
+.developer:hover {
+    scale: 1.1;
+    transform: skewY(10deg);
+}
+
+
+/* HELPER CLASSES */
+.eatties {
+    color: var(--sec-color);
+    font-size: 1.2em;
+}
+
+.nav-li--active a {
+    color: var(--tert-color) !important;
+}
+
+.nav-li--active:hover {
+    background: none;
+    transform: none;
+}
+
+.active-tab {
+    display: block !important;
 }

@@ -4,38 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant</title>
+    <title>eatties</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../src/favicon_io/favicon.ico">
 
     <link rel="stylesheet" href="../src/style.css">
     <script src="uzomian.js" defer></script>
 </head>
 <body>
     <div class="content">
-        <div class="name">
+        <header>
             <video src="../src/Chicken - 11619.mp4" autoplay muted loop></video>
             <h1>eatties</h1>
             <p>...all u can eat</p>
-        </div>
+        </header>
 
         <div class="cnt">
             <nav>
                 <ul>
-                    <li>home</li>
-                    <li>meals</li>
-                    <li>contact</li>
+                    <li class="nav-li--active"><a href="#" class="nav-link">home</a></li>
+                    <li><a href="#" class="nav-link">meals</a></li>
+                    <li><a href="#" class="nav-link">contact</a></li>
                 </ul>
             </nav>
     
-            <div class="home">
+            <div class="home active-tab">
                 <article class="intro">
                     <h2>Get ur bellies ready...</h2>
                     <p>
-                        There are different kinds of foods: foods that will make you belch, foods that will make you stuffed and foods that will make you hunger for more... Try them all in your very own eatties. It's not ours, it's yours.
+                        There are different kinds of foods -- foods that will make you belch, foods that will make you stuffed and foods that will make you hunger for more... Try them all in your very own <span class="eatties">eatties</span>. It's not ours, it's yours.
                     </p>
                 </article>
                 <article class="working-hours">
                     <h2>We open on...</h2>
-                    <p>Everyday of the week from 6 am to 9 pm. We cover both the early birds and the late owls.</p>
+                    <p>Everyday of the week (except Sundays) from 6 am till 12 midnight. We cover both the early birds and the late owls.</p>
                 </article>
                 <article class="location">
                     <h2>We stay at...</h2>
@@ -44,6 +46,11 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        <p class="eatties--footer-logo">eatties</p>
+        <p class="footer-text">This website was built by our favourite eattie, <a href="https://github.com/UZ0M1AN/Restaurant" target="_blank" class="developer">Uzoma S. Uzoma</a>.</p>
+    </footer>
 </body>
 </html>
 
