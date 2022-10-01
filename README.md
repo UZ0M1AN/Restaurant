@@ -1,8 +1,6 @@
 # Restaurant
 
 ## Credits
-- Chef - 27678 video by <a href="https://pixabay.com/users/julientromeur-3630051/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=video&amp;utm_content=27678">Julien Tromeur</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=video&amp;utm_content=27678">Pixabay</a>
-
 - Chicken - 11619 video by <a href="https://pixabay.com/users/xiaoskitchen-1319509/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=video&amp;utm_content=11619">Peter &amp; Xiao Harris</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=video&amp;utm_content=11619">Pixabay</a>
 
 - Egusi soup photo credited to <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Flowcarbafrica.com%2Fnigerian-egusi-soup%2F&psig=AOvVaw39S4xmWandM8u_C8CxiKKu&ust=1664670002825000&source=images&cd=vfe&ved=0CA4Q3YkBahcKEwj4tZTE3736AhUAAAAAHQAAAAAQDQ">Low Carb Africa</a>
