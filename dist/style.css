@@ -23,7 +23,7 @@ html {
 body {
     background-image: 
     linear-gradient(hsl(32, 100%, 74%, .6), hsl(32, 100%, 74%, .6)),
-     url('./img/foods.jpg');
+     url('../src/img/foods.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
