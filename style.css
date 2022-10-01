@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
+
 /* GENERAL */
 * {
     margin: 0;
@@ -23,7 +24,7 @@ html {
 body {
     background-image: 
     linear-gradient(hsl(32, 100%, 74%, .6), hsl(32, 100%, 74%, .6)),
-     url('../src/img/foods.jpg');
+     url('./img/foods.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
