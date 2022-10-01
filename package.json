@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/UZ0M1AN/Restaurant#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
   }

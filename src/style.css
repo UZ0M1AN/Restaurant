@@ -370,6 +370,7 @@ footer {
 
 .nav-li--active a {
     color: var(--tert-color) !important;
+    cursor: default;
 }
 
 .nav-li--active:hover {
@@ -379,4 +380,8 @@ footer {
 
 .active-tab {
     display: block !important;
+}
+
+.hidden {
+    display: none;
 }
